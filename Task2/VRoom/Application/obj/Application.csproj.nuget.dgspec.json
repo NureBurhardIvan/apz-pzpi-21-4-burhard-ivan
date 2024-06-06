@@ -41,6 +41,32 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AWSSDK.CognitoIdentityProvider": {
+              "target": "Package",
+              "version": "[3.7.305.12, )"
+            },
+            "Amazon.AspNetCore.Identity.Cognito": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "Amazon.Extensions.CognitoAuthentication": {
+              "target": "Package",
+              "version": "[2.5.4, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[32.0.3, )"
+            },
+            "Mediator.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.0-preview.27, )"
+            },
+            "Mediator.SourceGenerator": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview.27, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.6, )"

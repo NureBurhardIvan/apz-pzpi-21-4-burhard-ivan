@@ -2,6 +2,132 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Amazon.AspNetCore.Identity.Cognito/3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.CognitoIdentity": "3.7.300.74",
+          "AWSSDK.CognitoIdentityProvider": "3.7.303.19",
+          "AWSSDK.Extensions.NETCore.Setup": "3.7.300",
+          "Amazon.Extensions.CognitoAuthentication": "2.5.2",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.8.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Amazon.AspNetCore.Identity.Cognito.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.AspNetCore.Identity.Cognito.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Amazon.Extensions.CognitoAuthentication/2.5.4": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.CognitoIdentity": "3.7.300.74",
+          "AWSSDK.CognitoIdentityProvider": "3.7.303.19"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Extensions.CognitoAuthentication.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Extensions.CognitoAuthentication.dll": {}
+        }
+      },
+      "AWSSDK.CognitoIdentity/3.7.300.74": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.303.14, 4.0.0)",
+          "AWSSDK.SecurityToken": "[3.7.300.75, 4.0.0)"
+        },
+        "compile": {
+          "lib/net8.0/AWSSDK.CognitoIdentity.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.CognitoIdentity.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.CognitoIdentityProvider/3.7.305.12": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.304.10, 4.0.0)"
+        },
+        "compile": {
+          "lib/net8.0/AWSSDK.CognitoIdentityProvider.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.CognitoIdentityProvider.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.304.10": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.7.300": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "3.7.300",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "AWSSDK.SecurityToken/3.7.300.75": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.303.14, 4.0.0)"
+        },
+        "compile": {
+          "lib/net8.0/AWSSDK.SecurityToken.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.SecurityToken.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "CsvHelper/32.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -13,6 +139,30 @@
           "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Mediator.Abstractions/3.0.0-preview.27": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Mediator.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Mediator.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Mediator.SourceGenerator/3.0.0-preview.27": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Scriban": "5.4.6"
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -272,6 +422,15 @@
           "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
             "locale": "zh-Hant"
           }
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.EntityFrameworkCore/8.0.6": {
@@ -582,6 +741,87 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/6.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/6.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "6.8.0",
+          "Microsoft.IdentityModel.Tokens": "6.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "6.8.0",
+          "System.IdentityModel.Tokens.Jwt": "6.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/6.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.IdentityModel.Logging": "6.8.0",
+          "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Mono.TextTemplating/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -627,6 +867,22 @@
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Scriban/5.4.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "System.CodeDom/4.4.0": {
@@ -763,6 +1019,23 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "System.IdentityModel.Tokens.Jwt/6.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
+          "Microsoft.IdentityModel.Tokens": "6.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.IO.Pipelines/6.0.3": {
         "type": "package",
         "compile": {
@@ -812,6 +1085,23 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Security.Cryptography.Cng/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Text.Encoding.CodePages/6.0.0": {
@@ -899,6 +1189,206 @@
     }
   },
   "libraries": {
+    "Amazon.AspNetCore.Identity.Cognito/3.0.2": {
+      "sha512": "XotIcWj4pvSgygaAOMt6Su/XO1v4ZnAa1Ws+3WF4rfr0p/6+tqGeaR6m5e9NMWLzDZ7dB75v33eRknuJJjBvJg==",
+      "type": "package",
+      "path": "amazon.aspnetcore.identity.cognito/3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "amazon.aspnetcore.identity.cognito.3.0.2.nupkg.sha512",
+        "amazon.aspnetcore.identity.cognito.nuspec",
+        "icon.png",
+        "lib/netcoreapp3.1/Amazon.AspNetCore.Identity.Cognito.dll",
+        "lib/netstandard2.0/Amazon.AspNetCore.Identity.Cognito.dll"
+      ]
+    },
+    "Amazon.Extensions.CognitoAuthentication/2.5.4": {
+      "sha512": "oySxksWPJbbQeYaAr/IL8zjWKfn8D1zUJ84IGaSd3Fq9Cy3XDYhWpTT2ITyswg6OSE7aaNGzFlN1N20/dmCu6w==",
+      "type": "package",
+      "path": "amazon.extensions.cognitoauthentication/2.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "amazon.extensions.cognitoauthentication.2.5.4.nupkg.sha512",
+        "amazon.extensions.cognitoauthentication.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Amazon.Extensions.CognitoAuthentication.dll"
+      ]
+    },
+    "AWSSDK.CognitoIdentity/3.7.300.74": {
+      "sha512": "2WjZrVJn7nm6rWZyDEXVgdyZVdTze4pfZjxdr0Q9gEi+7fCq40z//YQLAlwD44UlzVWpONdLvjcCuA39T5Q/QA==",
+      "type": "package",
+      "path": "awssdk.cognitoidentity/3.7.300.74",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.CognitoIdentity.CodeAnalysis.dll",
+        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
+        "awssdk.cognitoidentity.3.7.300.74.nupkg.sha512",
+        "awssdk.cognitoidentity.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.CognitoIdentity.dll",
+        "lib/net35/AWSSDK.CognitoIdentity.pdb",
+        "lib/net35/AWSSDK.CognitoIdentity.xml",
+        "lib/net45/AWSSDK.CognitoIdentity.dll",
+        "lib/net45/AWSSDK.CognitoIdentity.pdb",
+        "lib/net45/AWSSDK.CognitoIdentity.xml",
+        "lib/net8.0/AWSSDK.CognitoIdentity.dll",
+        "lib/net8.0/AWSSDK.CognitoIdentity.pdb",
+        "lib/net8.0/AWSSDK.CognitoIdentity.xml",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentity.dll",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentity.pdb",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentity.xml",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentity.pdb",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentity.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.CognitoIdentityProvider/3.7.305.12": {
+      "sha512": "CO56jDw/MQCcN2V3T0ac2xomYdtHcNlrmqJhxsfgHNV/Naq/Yfm/XuCbVeNuonHgCckKW4D5idP4nSeVbEU1rg==",
+      "type": "package",
+      "path": "awssdk.cognitoidentityprovider/3.7.305.12",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.CognitoIdentityProvider.CodeAnalysis.dll",
+        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
+        "awssdk.cognitoidentityprovider.3.7.305.12.nupkg.sha512",
+        "awssdk.cognitoidentityprovider.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/net35/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/net35/AWSSDK.CognitoIdentityProvider.xml",
+        "lib/net45/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/net45/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/net45/AWSSDK.CognitoIdentityProvider.xml",
+        "lib/net8.0/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/net8.0/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/net8.0/AWSSDK.CognitoIdentityProvider.xml",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentityProvider.xml",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.dll",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.pdb",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentityProvider.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.Core/3.7.304.10": {
+      "sha512": "0CXnPzoM+KYXODm2bvRW8eYs7ic2VLop45sphL8FBfvxHfBK/3OJgpxEE2InSdWS1Iby+6KXpz3NplJJY5+Y1A==",
+      "type": "package",
+      "path": "awssdk.core/3.7.304.10",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.7.304.10.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/net8.0/AWSSDK.Core.dll",
+        "lib/net8.0/AWSSDK.Core.pdb",
+        "lib/net8.0/AWSSDK.Core.xml",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.7.300": {
+      "sha512": "zMxAHFYSAWHsVV9Cn96nE+V40agRCjT0etF10f0d/nFMMb1z7lecVwNadq9JYyqlDj+jsVRH9ydk4Al4v/1+jg==",
+      "type": "package",
+      "path": "awssdk.extensions.netcore.setup/3.7.300",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.extensions.netcore.setup.3.7.300.nupkg.sha512",
+        "awssdk.extensions.netcore.setup.nuspec",
+        "images/AWSLogo.png",
+        "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.dll",
+        "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Extensions.NETCore.Setup.dll",
+        "lib/netcoreapp3.1/AWSSDK.Extensions.NETCore.Setup.pdb",
+        "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll",
+        "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.pdb"
+      ]
+    },
+    "AWSSDK.SecurityToken/3.7.300.75": {
+      "sha512": "Tr1rbOf9DrZTr3XWPDDnwBjigjKf/QLRIB2V4XGEqaBDYUHnRBuckG2sMNpsq/q9tHSvYvvFXCfIH7R0EpNJBg==",
+      "type": "package",
+      "path": "awssdk.securitytoken/3.7.300.75",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SecurityToken.CodeAnalysis.dll",
+        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
+        "awssdk.securitytoken.3.7.300.75.nupkg.sha512",
+        "awssdk.securitytoken.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.SecurityToken.dll",
+        "lib/net35/AWSSDK.SecurityToken.pdb",
+        "lib/net35/AWSSDK.SecurityToken.xml",
+        "lib/net45/AWSSDK.SecurityToken.dll",
+        "lib/net45/AWSSDK.SecurityToken.pdb",
+        "lib/net45/AWSSDK.SecurityToken.xml",
+        "lib/net8.0/AWSSDK.SecurityToken.dll",
+        "lib/net8.0/AWSSDK.SecurityToken.pdb",
+        "lib/net8.0/AWSSDK.SecurityToken.xml",
+        "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll",
+        "lib/netcoreapp3.1/AWSSDK.SecurityToken.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SecurityToken.xml",
+        "lib/netstandard2.0/AWSSDK.SecurityToken.dll",
+        "lib/netstandard2.0/AWSSDK.SecurityToken.pdb",
+        "lib/netstandard2.0/AWSSDK.SecurityToken.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "CsvHelper/32.0.3": {
+      "sha512": "JNDkd4Wc2Tim5IuyL8Ai13RhzRvaHItseEvlJ2YRkx2SMBFrIsW8a5+/o4/O1jsb6mlviihR6Hfyn+nqY6CurA==",
+      "type": "package",
+      "path": "csvhelper/32.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.32.0.3.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net462/CsvHelper.dll",
+        "lib/net462/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net48/CsvHelper.dll",
+        "lib/net48/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/net7.0/CsvHelper.dll",
+        "lib/net7.0/CsvHelper.xml",
+        "lib/net8.0/CsvHelper.dll",
+        "lib/net8.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -915,6 +1405,37 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Mediator.Abstractions/3.0.0-preview.27": {
+      "sha512": "nxOWMB9M7iM1vgICwB/HTREFGyF4EDlyCuAWXnpjFTuz1bj5ss5OtMZ3vBmj0ERuHP6CfcAxlrZKuSQKKEmkPQ==",
+      "type": "package",
+      "path": "mediator.abstractions/3.0.0-preview.27",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net6.0/Mediator.dll",
+        "lib/net6.0/Mediator.xml",
+        "lib/netstandard2.0/Mediator.dll",
+        "lib/netstandard2.0/Mediator.xml",
+        "mediator.abstractions.3.0.0-preview.27.nupkg.sha512",
+        "mediator.abstractions.nuspec"
+      ]
+    },
+    "Mediator.SourceGenerator/3.0.0-preview.27": {
+      "sha512": "W8Qadl678b+ZtzmTY1JjO2EyofDLch8iSCHnSaW+TWZmfDExxTQqQ3ND4fIaQ6WWKGvdWl/nyOh24wboMgAl+w==",
+      "type": "package",
+      "path": "mediator.sourcegenerator/3.0.0-preview.27",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "analyzers/dotnet/cs/Mediator.SourceGenerator.dll",
+        "mediator.sourcegenerator.3.0.0-preview.27.nupkg.sha512",
+        "mediator.sourcegenerator.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -1367,6 +1888,74 @@
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll",
         "microsoft.codeanalysis.workspaces.common.4.5.0.nupkg.sha512",
         "microsoft.codeanalysis.workspaces.common.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "type": "package",
+      "path": "microsoft.csharp/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.EntityFrameworkCore/8.0.6": {
@@ -1868,6 +2457,91 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
+      "sha512": "+7JIww64PkMt7NWFxoe4Y/joeF7TAtA/fQ0b2GFGcagzB59sKkTt/sMZWR6aSZht5YC7SdHi3W6yM1yylRGJCQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/6.8.0": {
+      "sha512": "Rfh/p4MaN4gkmhPxwbu8IjrmoDncGfHHPh1sTnc0AcM/Oc39/fzC9doKNWvUAjzFb8LqA6lgZyblTrIsX/wDXg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Logging.dll",
+        "lib/net45/Microsoft.IdentityModel.Logging.xml",
+        "lib/net461/Microsoft.IdentityModel.Logging.dll",
+        "lib/net461/Microsoft.IdentityModel.Logging.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
+        "microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols/6.8.0": {
+      "sha512": "OJZx5nPdiH+MEkwCkbJrTAUiO/YzLe0VSswNlDxJsJD9bhOIdXHufh650pfm59YH1DNevp3/bXzukKrG57gA1w==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net45/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net461/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.xml",
+        "microsoft.identitymodel.protocols.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.8.0": {
+      "sha512": "X/PiV5l3nYYsodtrNMrNQIVlDmHpjQQ5w48E+o/D5H4es2+4niEyQf3l03chvZGWNzBRhfSstaXr25/Ye4AeYw==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols.openidconnect/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.openidconnect.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Tokens/6.8.0": {
+      "sha512": "gTqzsGcmD13HgtNePPcuVHZ/NXWmyV+InJgalW/FhWpII1D7V1k0obIseGlWMeA4G+tZfeGMfXr0klnWbMR/mQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.tokens/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net45/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
+        "microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
     "Mono.TextTemplating/2.2.1": {
       "sha512": "KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "type": "package",
@@ -1917,6 +2591,193 @@
         "npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
+      ]
+    },
+    "Scriban/5.4.6": {
+      "sha512": "08MfrLDM9Rz08/toBVjTqcUmdGyKbLQ5eTLp2MHUv4k8cox2jN6E/3Ss8NaqUuL2psU2cp0sy2aNEDep7jp0Kg==",
+      "type": "package",
+      "path": "scriban/5.4.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Scriban.props",
+        "build/Scriban.targets",
+        "lib/net5.0/Scriban.dll",
+        "lib/net5.0/Scriban.xml",
+        "lib/net6.0/Scriban.dll",
+        "lib/net6.0/Scriban.xml",
+        "lib/netstandard2.0/Scriban.dll",
+        "lib/netstandard2.0/Scriban.xml",
+        "readme.md",
+        "scriban.5.4.6.nupkg.sha512",
+        "scriban.nuspec",
+        "scriban.png",
+        "src/Scriban/Functions/ArrayFunctions.cs",
+        "src/Scriban/Functions/BuiltinFunctions.cs",
+        "src/Scriban/Functions/DateTimeFunctions.cs",
+        "src/Scriban/Functions/HtmlFunctions.cs",
+        "src/Scriban/Functions/IncludeFunction.cs",
+        "src/Scriban/Functions/LiquidBuiltinsFunctions.cs",
+        "src/Scriban/Functions/MathFunctions.cs",
+        "src/Scriban/Functions/ObjectFunctions.cs",
+        "src/Scriban/Functions/RegexFunctions.cs",
+        "src/Scriban/Functions/StringFunctions.cs",
+        "src/Scriban/Functions/TimeSpanFunctions.cs",
+        "src/Scriban/Helpers/BoxHelper.cs",
+        "src/Scriban/Helpers/CharHelper.cs",
+        "src/Scriban/Helpers/FastStack.cs",
+        "src/Scriban/Helpers/InlineList.cs",
+        "src/Scriban/Helpers/ReflectionHelper.cs",
+        "src/Scriban/Helpers/StringHelper.cs",
+        "src/Scriban/Helpers/ThrowHelper.cs",
+        "src/Scriban/LogMessageBag.cs",
+        "src/Scriban/Parsing/Lexer.cs",
+        "src/Scriban/Parsing/LexerOptions.cs",
+        "src/Scriban/Parsing/LogMessage.cs",
+        "src/Scriban/Parsing/Parser.Expressions.cs",
+        "src/Scriban/Parsing/Parser.Statements.Liquid.cs",
+        "src/Scriban/Parsing/Parser.Statements.Scriban.cs",
+        "src/Scriban/Parsing/Parser.Statements.cs",
+        "src/Scriban/Parsing/Parser.Terminals.cs",
+        "src/Scriban/Parsing/Parser.cs",
+        "src/Scriban/Parsing/ParserOptions.cs",
+        "src/Scriban/Parsing/ScriptLang.cs",
+        "src/Scriban/Parsing/ScriptMode.cs",
+        "src/Scriban/Parsing/SourceSpan.cs",
+        "src/Scriban/Parsing/TextPosition.cs",
+        "src/Scriban/Parsing/Token.cs",
+        "src/Scriban/Parsing/TokenTextAttribute.cs",
+        "src/Scriban/Parsing/TokenType.cs",
+        "src/Scriban/Parsing/TokenTypeExtensions.cs",
+        "src/Scriban/Parsing/Util.cs",
+        "src/Scriban/Runtime/Accessors/ArrayAccessor.cs",
+        "src/Scriban/Runtime/Accessors/DictionaryAccessor.cs",
+        "src/Scriban/Runtime/Accessors/ListAccessor.cs",
+        "src/Scriban/Runtime/Accessors/NullAccessor.cs",
+        "src/Scriban/Runtime/Accessors/PrimitiveAccessor.cs",
+        "src/Scriban/Runtime/Accessors/ScriptObjectAccessor.cs",
+        "src/Scriban/Runtime/Accessors/StringAccessor.cs",
+        "src/Scriban/Runtime/Accessors/TypedObjectAccessor.cs",
+        "src/Scriban/Runtime/CustomFunction.Generated.cs",
+        "src/Scriban/Runtime/DelegateCustomFunction.cs",
+        "src/Scriban/Runtime/DynamicCustomFunction.cs",
+        "src/Scriban/Runtime/EmptyScriptObject.cs",
+        "src/Scriban/Runtime/IListAccessor.cs",
+        "src/Scriban/Runtime/IObjectAccessor.cs",
+        "src/Scriban/Runtime/IScriptCustomFunction.cs",
+        "src/Scriban/Runtime/IScriptObject.cs",
+        "src/Scriban/Runtime/IScriptOutput.cs",
+        "src/Scriban/Runtime/IScriptTransformable.cs",
+        "src/Scriban/Runtime/ITemplateLoader.cs",
+        "src/Scriban/Runtime/MemberFilterDelegate.cs",
+        "src/Scriban/Runtime/MemberRenamerDelegate.cs",
+        "src/Scriban/Runtime/ScriptArray.cs",
+        "src/Scriban/Runtime/ScriptMemberIgnoreAttribute.cs",
+        "src/Scriban/Runtime/ScriptMemberImportFlags.cs",
+        "src/Scriban/Runtime/ScriptObject.cs",
+        "src/Scriban/Runtime/ScriptObjectExtensions.cs",
+        "src/Scriban/Runtime/ScriptPipeArguments.cs",
+        "src/Scriban/Runtime/ScriptRange.cs",
+        "src/Scriban/Runtime/StandardMemberRenamer.cs",
+        "src/Scriban/Runtime/StringBuilderOutput.cs",
+        "src/Scriban/Runtime/TextWriterOutput.cs",
+        "src/Scriban/ScribanAsync.generated.cs",
+        "src/Scriban/ScribanVisitors.generated.cs",
+        "src/Scriban/ScriptPrinter.cs",
+        "src/Scriban/ScriptPrinterOptions.cs",
+        "src/Scriban/Syntax/Expressions/IScriptTerminal.cs",
+        "src/Scriban/Syntax/Expressions/ScriptAnonymousFunction.cs",
+        "src/Scriban/Syntax/Expressions/ScriptArgumentBinary.cs",
+        "src/Scriban/Syntax/Expressions/ScriptArrayInitializerExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptAssignExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptBinaryExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptBinaryOperator.cs",
+        "src/Scriban/Syntax/Expressions/ScriptConditionalExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptFunctionCall.cs",
+        "src/Scriban/Syntax/Expressions/ScriptIncrementDecrementExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptIndexerExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptIsEmptyExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptLiteral.cs",
+        "src/Scriban/Syntax/Expressions/ScriptMemberExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptNamedArgument.cs",
+        "src/Scriban/Syntax/Expressions/ScriptNestedExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptObjectInitializerExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptObjectMember.cs",
+        "src/Scriban/Syntax/Expressions/ScriptPipeCall.cs",
+        "src/Scriban/Syntax/Expressions/ScriptThisExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptUnaryExpression.cs",
+        "src/Scriban/Syntax/Expressions/ScriptUnaryOperator.cs",
+        "src/Scriban/Syntax/Expressions/ScriptVariable.cs",
+        "src/Scriban/Syntax/Expressions/ScriptVariableScope.cs",
+        "src/Scriban/Syntax/IScriptConvertibleFrom.cs",
+        "src/Scriban/Syntax/IScriptConvertibleTo.cs",
+        "src/Scriban/Syntax/IScriptCustomBinaryOperation.cs",
+        "src/Scriban/Syntax/IScriptCustomImplicitMultiplyPrecedence.cs",
+        "src/Scriban/Syntax/IScriptCustomType.cs",
+        "src/Scriban/Syntax/IScriptCustomTypeInfo.cs",
+        "src/Scriban/Syntax/IScriptCustomUnaryOperation.cs",
+        "src/Scriban/Syntax/IScriptNamedArgumentContainer.cs",
+        "src/Scriban/Syntax/IScriptVariablePath.cs",
+        "src/Scriban/Syntax/IScriptVisitorContext.cs",
+        "src/Scriban/Syntax/ScientificFunctionCallRewriter.cs",
+        "src/Scriban/Syntax/ScriptArgumentException.cs",
+        "src/Scriban/Syntax/ScriptCloner.cs",
+        "src/Scriban/Syntax/ScriptFormatter.cs",
+        "src/Scriban/Syntax/ScriptFormatterExtensions.cs",
+        "src/Scriban/Syntax/ScriptFormatterFlags.cs",
+        "src/Scriban/Syntax/ScriptFormatterOptions.cs",
+        "src/Scriban/Syntax/ScriptFrontMatter.cs",
+        "src/Scriban/Syntax/ScriptIdentifier.cs",
+        "src/Scriban/Syntax/ScriptKeyword.cs",
+        "src/Scriban/Syntax/ScriptList.cs",
+        "src/Scriban/Syntax/ScriptNode.cs",
+        "src/Scriban/Syntax/ScriptNodeExtensions.cs",
+        "src/Scriban/Syntax/ScriptPage.cs",
+        "src/Scriban/Syntax/ScriptParameterContainerExtensions.cs",
+        "src/Scriban/Syntax/ScriptRewriter.cs",
+        "src/Scriban/Syntax/ScriptRuntimeException.cs",
+        "src/Scriban/Syntax/ScriptStringSlice.cs",
+        "src/Scriban/Syntax/ScriptSyntaxAttribute.cs",
+        "src/Scriban/Syntax/ScriptToken.cs",
+        "src/Scriban/Syntax/ScriptTrivia.cs",
+        "src/Scriban/Syntax/ScriptTriviaType.cs",
+        "src/Scriban/Syntax/ScriptTriviaTypeExtensions.cs",
+        "src/Scriban/Syntax/ScriptTrivias.cs",
+        "src/Scriban/Syntax/ScriptVerbatim.cs",
+        "src/Scriban/Syntax/ScriptVisitor.cs",
+        "src/Scriban/Syntax/Statements/ScriptBlockStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptBreakStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptCaptureStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptCaseStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptConditionStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptContinueStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptElseStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptEndStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptEscapeStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptExpressionStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptFlowState.cs",
+        "src/Scriban/Syntax/Statements/ScriptForStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptFunction.cs",
+        "src/Scriban/Syntax/Statements/ScriptIfStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptImportStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptLoopStatementBase.cs",
+        "src/Scriban/Syntax/Statements/ScriptNopStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptParameter.cs",
+        "src/Scriban/Syntax/Statements/ScriptRawStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptReadOnlyStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptReturnStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptTableRowStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptWhenStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptWhileStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptWhitespaceMode.cs",
+        "src/Scriban/Syntax/Statements/ScriptWithStatement.cs",
+        "src/Scriban/Syntax/Statements/ScriptWrapStatement.cs",
+        "src/Scriban/Template.cs",
+        "src/Scriban/TemplateContext.Helpers.cs",
+        "src/Scriban/TemplateContext.Variables.cs",
+        "src/Scriban/TemplateContext.cs"
       ]
     },
     "System.CodeDom/4.4.0": {
@@ -2095,6 +2956,23 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.IdentityModel.Tokens.Jwt/6.8.0": {
+      "sha512": "5tBCjAub2Bhd5qmcd0WhR5s354e4oLYa//kOWrkX+6/7ZbDDJjMTfwLSOiZ/MMpWdE4DWPLOfTLOq/juj9CKzA==",
+      "type": "package",
+      "path": "system.identitymodel.tokens.jwt/6.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
+        "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.nuspec"
+      ]
+    },
     "System.IO.Pipelines/6.0.3": {
       "sha512": "ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
       "type": "package",
@@ -2166,6 +3044,69 @@
         "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.Cryptography.Cng/4.5.0": {
+      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "type": "package",
+      "path": "system.security.cryptography.cng/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Cng.dll",
+        "lib/net461/System.Security.Cryptography.Cng.dll",
+        "lib/net462/System.Security.Cryptography.Cng.dll",
+        "lib/net47/System.Security.Cryptography.Cng.dll",
+        "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard1.3/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard1.4/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Cng.dll",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Cng.dll",
+        "ref/net461/System.Security.Cryptography.Cng.dll",
+        "ref/net461/System.Security.Cryptography.Cng.xml",
+        "ref/net462/System.Security.Cryptography.Cng.dll",
+        "ref/net462/System.Security.Cryptography.Cng.xml",
+        "ref/net47/System.Security.Cryptography.Cng.dll",
+        "ref/net47/System.Security.Cryptography.Cng.xml",
+        "ref/netcoreapp2.0/System.Security.Cryptography.Cng.dll",
+        "ref/netcoreapp2.0/System.Security.Cryptography.Cng.xml",
+        "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
+        "ref/netcoreapp2.1/System.Security.Cryptography.Cng.xml",
+        "ref/netstandard1.3/System.Security.Cryptography.Cng.dll",
+        "ref/netstandard1.4/System.Security.Cryptography.Cng.dll",
+        "ref/netstandard1.6/System.Security.Cryptography.Cng.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.Cng.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.Cng.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net46/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net462/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/net47/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.cryptography.cng.4.5.0.nupkg.sha512",
+        "system.security.cryptography.cng.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Text.Encoding.CodePages/6.0.0": {
@@ -2345,6 +3286,12 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AWSSDK.CognitoIdentityProvider >= 3.7.305.12",
+      "Amazon.AspNetCore.Identity.Cognito >= 3.0.2",
+      "Amazon.Extensions.CognitoAuthentication >= 2.5.4",
+      "CsvHelper >= 32.0.3",
+      "Mediator.Abstractions >= 3.0.0-preview.27",
+      "Mediator.SourceGenerator >= 3.0.0-preview.27",
       "Microsoft.EntityFrameworkCore >= 8.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.6",
@@ -2394,6 +3341,32 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AWSSDK.CognitoIdentityProvider": {
+            "target": "Package",
+            "version": "[3.7.305.12, )"
+          },
+          "Amazon.AspNetCore.Identity.Cognito": {
+            "target": "Package",
+            "version": "[3.0.2, )"
+          },
+          "Amazon.Extensions.CognitoAuthentication": {
+            "target": "Package",
+            "version": "[2.5.4, )"
+          },
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[32.0.3, )"
+          },
+          "Mediator.Abstractions": {
+            "target": "Package",
+            "version": "[3.0.0-preview.27, )"
+          },
+          "Mediator.SourceGenerator": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.0-preview.27, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.6, )"
