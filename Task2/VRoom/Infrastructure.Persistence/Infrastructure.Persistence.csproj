@@ -29,10 +29,11 @@
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
       <PackageReference Include="Npgsql" Version="8.0.3" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+      <PackageReference Include="Riok.Mapperly" Version="3.6.0-next.2" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Repositories\" />
+      <ProjectReference Include="..\Application\Application.csproj" />
     </ItemGroup>
 
 </Project>

@@ -7,6 +7,7 @@ using Application.User.DTOs.RequestDTOs;
 using Application.User.DTOs.ResponseDTOs;
 using Microsoft.Extensions.Options;
 using System.Net;
+using Application.Common.Interfaces.Repositories;
 using Infrastructure.Persistence;
 
 namespace Infrastructure.Services
@@ -14,13 +15,15 @@ namespace Infrastructure.Services
     public class CognitoAuthService : IAuthService
     {
         private readonly IAmazonCognitoIdentityProvider _identityProvider;
+        private readonly IUserRepository _userRepository;
         private readonly CognitoUserPool _userPool;
         private readonly AwsOptions _awsOptions;
 
-        public CognitoAuthService(IAmazonCognitoIdentityProvider identityProvider, CognitoUserPool userPool, IOptions<AwsOptions> awsOptions)
+        public CognitoAuthService(IAmazonCognitoIdentityProvider identityProvider, CognitoUserPool userPool, IOptions<AwsOptions> awsOptions, IUserRepository userRepository)
         {
             _identityProvider = identityProvider;
             _userPool = userPool;
+            _userRepository = userRepository;
             _awsOptions = awsOptions.Value;
         }
 
@@ -74,7 +77,7 @@ namespace Infrastructure.Services
             return response;
         }
 
-        public async Task<SignUpResponse> RegisterAsync(RegisterUserDto registerDto)
+        public async Task<UserGotDto> RegisterAsync(RegisterUserDto registerDto)
         {
             var roleTitle = nameof(Role.User);
             var request = new SignUpRequest
@@ -99,7 +102,8 @@ namespace Infrastructure.Services
 
             var signUpResponse = await _identityProvider.SignUpAsync(request);
 
-            return signUpResponse;
+            var a = await _userRepository.Create(registerDto with { Id = new Guid(signUpResponse.UserSub) });
+            return a;
         }
     }
 }

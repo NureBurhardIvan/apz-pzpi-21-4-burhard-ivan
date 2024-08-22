@@ -18,6 +18,7 @@ namespace Infrastructure.Persistence
         public DbSet<ReservationService> ReservationServices { get; set; } = null!;
         public DbSet<Room> Rooms { get; set; } = null!;
         public DbSet<Service> Services { get; set; } = null!;
+        public DbSet<Hotel> Hotels { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

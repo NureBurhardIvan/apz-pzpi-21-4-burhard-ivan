@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VBJsfK3yHTyh07NIPeFyIz9gKawrMziOAEhsYbxjQCCMf3TbWPS1ERwLMF4Mja34RbaBQL1glCfQph6J+nfTcA==",
+  "dgSpecHash": "rwMBNN3+wm46NQky+s1fpdHCMeYQJyr0/HKpGDCXQsd8KLuyAgMm33nvtnkBJjCBJIKkbTN4T8iw4a2e3nJXsQ==",
   "success": true,
   "projectFilePath": "D:\\Fork\\apz-pzpi-21-4-burhard-ivan\\Task2\\VRoom\\Application\\Application.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\ivanb\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
+    "C:\\Users\\ivanb\\.nuget\\packages\\riok.mapperly\\3.6.0-next.2\\riok.mapperly.3.6.0-next.2.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\scriban\\5.4.6\\scriban.5.4.6.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",

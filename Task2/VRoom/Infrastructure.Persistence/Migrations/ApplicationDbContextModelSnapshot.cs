@@ -49,6 +49,28 @@ namespace Infrastructure.Persistence.Migrations
                     b.ToTable("Bookings");
                 });
 
+            modelBuilder.Entity("Infrastructure.Persistence.Entities.Hotel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Hotels");
+                });
+
             modelBuilder.Entity("Infrastructure.Persistence.Entities.IoTData", b =>
                 {
                     b.Property<Guid>("Id")
@@ -132,6 +154,9 @@ namespace Infrastructure.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<Guid>("HotelId")
+                        .HasColumnType("uuid");
+
                     b.Property<int>("Occupation")
                         .HasColumnType("integer");
 
@@ -145,6 +170,8 @@ namespace Infrastructure.Persistence.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("HotelId");
 
                     b.ToTable("Rooms");
                 });
@@ -280,6 +307,22 @@ namespace Infrastructure.Persistence.Migrations
                     b.Navigation("Reservation");
 
                     b.Navigation("Service");
+                });
+
+            modelBuilder.Entity("Infrastructure.Persistence.Entities.Room", b =>
+                {
+                    b.HasOne("Infrastructure.Persistence.Entities.Hotel", "Hotel")
+                        .WithMany("Rooms")
+                        .HasForeignKey("HotelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Hotel");
+                });
+
+            modelBuilder.Entity("Infrastructure.Persistence.Entities.Hotel", b =>
+                {
+                    b.Navigation("Rooms");
                 });
 
             modelBuilder.Entity("Infrastructure.Persistence.Entities.Reservation", b =>

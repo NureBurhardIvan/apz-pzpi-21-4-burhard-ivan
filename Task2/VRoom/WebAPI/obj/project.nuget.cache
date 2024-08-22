@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D7bpL0OiBQ8Lm6XlJxoDtyuJwMp3nYe4ptPZk7gfoRcO5DH7UcKQtaXEWP6kypncbMajuKuiR69Pp/P2mFZA0g==",
+  "dgSpecHash": "rZ3x97cH5u6UR04yTRmYxSZ3wsy+DPxr/whI8rrdINBB72pXZIut7dG4yL7ZU3LoAtnyihTEAy1g9Ces/aqQfQ==",
   "success": true,
   "projectFilePath": "D:\\Fork\\apz-pzpi-21-4-burhard-ivan\\Task2\\VRoom\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "C:\\Users\\ivanb\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
+    "C:\\Users\\ivanb\\.nuget\\packages\\riok.mapperly\\3.6.0-next.2\\riok.mapperly.3.6.0-next.2.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\scriban\\5.4.6\\scriban.5.4.6.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",

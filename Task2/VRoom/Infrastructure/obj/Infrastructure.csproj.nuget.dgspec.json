@@ -98,6 +98,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Riok.Mapperly": {
+              "target": "Package",
+              "version": "[3.6.0-next.2, )"
             }
           },
           "imports": [
@@ -144,7 +148,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Fork\\apz-pzpi-21-4-burhard-ivan\\Task2\\VRoom\\Application\\Application.csproj": {
+                "projectPath": "D:\\Fork\\apz-pzpi-21-4-burhard-ivan\\Task2\\VRoom\\Application\\Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -214,6 +222,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Riok.Mapperly": {
+              "target": "Package",
+              "version": "[3.6.0-next.2, )"
             }
           },
           "imports": [
@@ -337,6 +349,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Riok.Mapperly": {
+              "target": "Package",
+              "version": "[3.6.0-next.2, )"
             }
           },
           "imports": [
