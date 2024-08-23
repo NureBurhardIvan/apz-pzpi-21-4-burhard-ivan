@@ -1,4 +1,6 @@
-﻿using Application.Service.DTOs.RequestDTOs;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Application.Service.DTOs.RequestDTOs;
 using Application.Service.DTOs.ResponseDTOs;
 
 namespace Application.Common.Interfaces.Repositories;

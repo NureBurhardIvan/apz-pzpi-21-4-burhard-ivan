@@ -1,4 +1,6 @@
-﻿namespace Application.Common.Interfaces.Services;
+﻿using System.Threading.Tasks;
+
+namespace Application.Common.Interfaces.Services;
 
 public interface IBackupService
 {

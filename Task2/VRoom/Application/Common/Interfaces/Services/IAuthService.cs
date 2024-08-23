@@ -1,4 +1,5 @@
-﻿using Amazon.CognitoIdentityProvider.Model;
+﻿using System.Threading.Tasks;
+using Amazon.CognitoIdentityProvider.Model;
 using Application.User.DTOs.RequestDTOs;
 using Application.User.DTOs.ResponseDTOs;
 

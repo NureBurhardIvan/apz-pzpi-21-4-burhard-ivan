@@ -1,4 +1,6 @@
-﻿namespace Infrastructure.Persistence.Entities;
+﻿using System;
+
+namespace Infrastructure.Persistence.Entities;
 
 public class Booking
 {

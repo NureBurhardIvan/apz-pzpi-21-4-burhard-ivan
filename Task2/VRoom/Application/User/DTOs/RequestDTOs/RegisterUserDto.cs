@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Application.User.DTOs.RequestDTOs
 {
     public record RegisterUserDto

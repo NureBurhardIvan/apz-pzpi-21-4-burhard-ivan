@@ -1,4 +1,6 @@
-﻿namespace Application.Service.DTOs.ResponseDTOs;
+﻿using System;
+
+namespace Application.Service.DTOs.ResponseDTOs;
 
 public class ServiceGotDto
 {

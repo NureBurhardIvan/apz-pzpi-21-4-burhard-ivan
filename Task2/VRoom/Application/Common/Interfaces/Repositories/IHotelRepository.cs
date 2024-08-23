@@ -1,4 +1,6 @@
-﻿using Application.Hotel.DTOs.RequestDTOs;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Application.Hotel.DTOs.RequestDTOs;
 using Application.Hotel.DTOs.ResponseDTOs;
 
 namespace Application.Common.Interfaces.Repositories;

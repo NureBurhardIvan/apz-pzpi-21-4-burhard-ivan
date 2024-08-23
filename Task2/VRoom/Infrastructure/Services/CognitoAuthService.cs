@@ -1,4 +1,6 @@
-﻿using Amazon.CognitoIdentityProvider;
+﻿using System;
+using System.Collections.Generic;
+using Amazon.CognitoIdentityProvider;
 using Amazon.CognitoIdentityProvider.Model;
 using Amazon.Extensions.CognitoAuthentication;
 using Application.Common.Interfaces.Services;
@@ -7,6 +9,7 @@ using Application.User.DTOs.RequestDTOs;
 using Application.User.DTOs.ResponseDTOs;
 using Microsoft.Extensions.Options;
 using System.Net;
+using System.Threading.Tasks;
 using Application.Common.Interfaces.Repositories;
 using Infrastructure.Persistence;
 

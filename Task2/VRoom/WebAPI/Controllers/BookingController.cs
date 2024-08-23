@@ -1,4 +1,6 @@
-﻿using Application.Hotel.DTOs.RequestDTOs;
+﻿using System.Threading.Tasks;
+using Application.Common.Interfaces.Repositories;
+using Application.Hotel.DTOs.RequestDTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,4 +1,6 @@
-﻿namespace Application.Hotel.DTOs.ResponseDTOs;
+﻿using System;
+
+namespace Application.Hotel.DTOs.ResponseDTOs;
 
 public class HotelGotDto
 {
